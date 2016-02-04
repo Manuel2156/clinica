@@ -1,0 +1,2 @@
+2016/02/04 03:44:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'clinica.medicos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `medicos`.
+in C:\xampp\htdocs\clinica\index.php (13)

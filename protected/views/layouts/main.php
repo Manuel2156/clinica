@@ -30,8 +30,18 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
+
+				array('label'=>'Citas', 'url'=>array('/citas/admin')),
+				array('label'=>'Consultas', 'url'=>array('/consulta/admin')),
+				array('label'=>'Especialidad', 'url'=>array('/especialidad/admin')),
+				array('label'=>'Medicamentos', 'url'=>array('/medicamentos/admin')),
+				array('label'=>'Medicos', 'url'=>array('/medico/admin')),
+				array('label'=>'Pacientes', 'url'=>array('/pacientes/admin')),
+				array('label'=>'Tratamientos', 'url'=>array('/tratamientos/admin')),
+
+
+				array('label'=>'Acerca de', 'url'=>array('/site/page', 'view'=>'about')),
+				array('label'=>'Contactanos', 'url'=>array('/site/contact')),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
@@ -46,12 +56,6 @@
 	<?php echo $content; ?>
 
 	<div class="clear"></div>
-
-	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
-	</div><!-- footer -->
 
 </div><!-- page -->
 
